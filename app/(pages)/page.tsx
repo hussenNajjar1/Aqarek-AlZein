@@ -40,14 +40,17 @@ export default function Home() {
     <>
       <Hero />
 
-      <div className="max-w-7xl mx-auto px-6 py-10">
+      <div     id="properties" className="max-w-7xl mx-auto px-6 py-10">
         <h2 className="text-2xl font-bold text-right mb-6">العقارات</h2>
 
         {/* 🔥 الفلتر */}
         <FilterBar filters={filters} setFilters={setFilters} />
 
         {/* 🔥 النتائج */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+       
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {filteredProperties.length ? (
             filteredProperties.map((property) => (
               <PropertyCard key={property.id} property={property} />
@@ -57,8 +60,6 @@ export default function Home() {
               <FiSearch className="w-10 h-10 text-gray-400" />
 
               <span className="text-lg font-medium">لا يوجد نتائج</span>
-
-           
             </p>
           )}
         </div>

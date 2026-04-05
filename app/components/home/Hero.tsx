@@ -79,12 +79,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.9 }}
               className="mt-8 flex flex-wrap gap-4 justify-end"
             >
-              <Link
-                href="/properties"
-                className="bg-blue-800 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-900 transition hover:scale-105 duration-300"
-              >
-                تصفح العقارات
-              </Link>
+             
 
               <Link
                 href="/contact"

@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Favorites Button */}
         <Link
-          href="/favorites"
+          href="#properties"
           className="flex items-center gap-2 bg-[#1E3A8A] text-white px-5 py-2 rounded-full text-sm font-medium hover:scale-105 hover:opacity-90 transition duration-200"
         >
           تصفح العقارات

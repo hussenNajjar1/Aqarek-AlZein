@@ -7,7 +7,7 @@ export default function FavoritesPage() {
   const { favorites } = useFavorites();
 
   return (
-    <div className="p-6">
+    <div className="p-6 min-h-screen">
       <h1 className="text-2xl font-bold mb-6 text-right">
         العقارات المفضلة ❤️
       </h1>

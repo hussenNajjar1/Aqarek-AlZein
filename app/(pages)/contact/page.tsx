@@ -19,7 +19,7 @@ export default function ContactPage() {
   });
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-20 text-right">
+    <div className="max-w-7xl mx-auto px-6 py-20 text-right min-h-screen">
       {/* 🔥 Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

@@ -5,7 +5,7 @@ import { FiAward, FiShield, FiTrendingUp } from "react-icons/fi";
 
 export default function AboutPage() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-20 text-right">
+    <div className="max-w-7xl mx-auto px-6 py-20 text-right min-h-screen">
       {/* 🔥 Hero */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

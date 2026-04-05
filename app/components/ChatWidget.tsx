@@ -60,17 +60,28 @@ export default function ChatWidget() {
             className="fixed bottom-24 right-6 w-[380px] h-[520px] z-50 rounded-3xl overflow-hidden border border-gray-200 shadow-2xl bg-white flex flex-col"
           >
             {/* HEADER BRAND */}
-            <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold">
-                AZ
+            <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 flex items-center justify-between">
+              {/* Info */}
+              <div className="flex items-center gap-3 text-right">
+                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold">
+                  AZ
+                </div>
+
+                <div>
+                  <h2 className="font-semibold text-sm">شركة الزين للعقارات</h2>
+                  <p className="text-xs text-blue-100">
+                    مستشار عقاري • متصل الآن
+                  </p>
+                </div>
               </div>
 
-              <div className="text-right">
-                <h2 className="font-semibold text-sm">شركة الزين للعقارات</h2>
-                <p className="text-xs text-blue-100">
-                  مستشار عقاري • متصل الآن
-                </p>
-              </div>
+              {/* زر الإغلاق */}
+              <button
+                onClick={() => setOpen(false)}
+                className="p-2 rounded-full hover:bg-white/20 transition"
+              >
+                <FiX size={18} />
+              </button>
             </div>
 
             {/* MESSAGES */}

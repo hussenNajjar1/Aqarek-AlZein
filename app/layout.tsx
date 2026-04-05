@@ -22,8 +22,8 @@ export default function RootLayout({
         <div>
           <FavoritesProvider>{children} </FavoritesProvider>
         </div>
-        <BottomNav />
         <Footer />
+        <BottomNav />
       </body>
     </html>
   );
