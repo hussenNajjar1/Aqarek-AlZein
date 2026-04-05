@@ -8,7 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 export default function BottomNav() {
   return (
-    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-lg h-16 bg-white border border-gray-200 rounded-full shadow-md px-6 font-cairo">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 w-full max-w-lg h-16 bg-white border border-gray-200 rounded-full shadow-md px-6 font-cairo">
       <ul className="flex justify-between items-center h-full flex-row-reverse">
         {/* الرئيسية */}
         <li>

@@ -42,7 +42,7 @@ export default function ChatWidget() {
       {/* زر الشات */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-[90px] right-6 z-50 md:bottom-6"
       >
         <div className="relative w-14 h-14 rounded-full bg-gradient-to-br from-blue-700 to-blue-500 text-white flex items-center justify-center shadow-xl hover:scale-110 transition">
           {open ? <FiX size={22} /> : <FiMessageCircle size={22} />}
