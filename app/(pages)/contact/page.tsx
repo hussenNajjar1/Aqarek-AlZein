@@ -63,7 +63,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
-              className="flex items-center  md:justify-end gap-4 bg-white p-6 rounded-3xl shadow-md hover:shadow-xl transition"
+              className="flex items-center md:justify-end gap-4 bg-white p-6 rounded-3xl shadow-md hover:shadow-xl transition"
             >
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 text-blue-600 text-xl shrink-0">
                 {item.icon}
@@ -88,10 +88,10 @@ export default function ContactPage() {
               الاسم الكامل
             </label>
             <div className="relative">
-              <FiUser className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <FiUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                className="w-full border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pr-12 pl-3 py-3 transition"
+                className="w-full text-right border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pl-12 pr-3 py-3 transition"
                 placeholder="أدخل اسمك"
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
               />
@@ -104,10 +104,10 @@ export default function ContactPage() {
               البريد الإلكتروني
             </label>
             <div className="relative">
-              <FiMail className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <FiMail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input
                 type="email"
-                className="w-full border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pr-12 pl-3 py-3 transition"
+                className="w-full text-right border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pl-12 pr-3 py-3 transition"
                 placeholder="example@email.com"
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
               />
@@ -120,9 +120,9 @@ export default function ContactPage() {
               رسالتك
             </label>
             <div className="relative">
-              <FiMessageSquare className="absolute right-3 top-4 text-gray-400" />
+              <FiMessageSquare className="absolute left-3 top-4 text-gray-400" />
               <textarea
-                className="w-full border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pr-12 pl-3 py-3 h-36 transition"
+                className="w-full text-right border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none rounded-xl pl-12 pr-3 py-3 h-36 transition"
                 placeholder="اكتب رسالتك هنا..."
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
               />
